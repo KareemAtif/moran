@@ -1,0 +1,47 @@
+/*
+Theme Name: moran
+Description: Theme is designed and developed for marsadomran.com
+Version: 1.0
+Date created: 7th Jun 2016
+Text Domain: marsadomran.com
+Author: Kareem Atif
+Author URI: http://kareematif.me
+Theme URI: http://kareematif.me/moran
+Email: Kareematif@gmail.com | Twitter: @kareematif
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+-----------------------------------------------------
+  COLORS
+----------------------
+  Black:         #111111
+  Gray:          #b7b7b7
+  Gray[borders]: #ebebeb
+  Green:         #01c0a1
+  Dark Blue:     #203040
+  Orange:        #fb7345
+  Pink:          #fe8081
+  Blue:          #60a0e0
+  Yellow:        #ffd140
+  
+  CSS
+---------------------*/
+@import url(assets/css/reset.css?ver=0.662222110);
+@import url(assets/css/globe.css?ver=0.6622133222200);
+@import url(assets/css/media.css?ver=0.66222132010);
+@import url(assets/css/rtl.css?ver=0.6610223302);
+  
+/* FONTS
+---------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Amiri:400,700&subset=arabic,latin);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,700i,800|Oswald:300,400,700);
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url('assets/font/jozor/JF-Flat-regular.eot');
+    src: url('assets/font/jozor/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('assets/font/jozor/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('assets/font/jozor/JF-Flat-regular.woff') format('woff'),
+    url('assets/font/jozor/JF-Flat-regular.ttf') format('truetype');
+    font-weight: normal; font-style: normal;
+};

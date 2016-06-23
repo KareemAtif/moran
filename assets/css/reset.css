@@ -1,0 +1,40 @@
+/*
+Description: RESET.CSS
+Version: 1.0b
+Author: Kareem Atif
+Author URI: http://kareematif.me
+Email: Kareematif@gmail.com | Twitter: @kareematif
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+---------------------------------------------------*/
+/* BODY 
+---------------------*/
+*, *:before, *:after {box-sizing:inherit}
+html, body, ul, form, input{margin:0;padding:0}
+html {height:100%}
+/* PARAGRAPH
+---------------------*/
+h1 {margin: 0.67em 0}
+h2 {margin: 0.55em 0}
+h3 {margin: 0.43em 0}
+h4 {margin: 0.31em 0}
+h5 {margin: 0.19em 0}
+h6 {margin:0}
+a {text-decoration: none;}
+/*.clearfix {font-size:0}*/
+.clearfix:after {content:"";display:table;clear:both}
+input {border:none;outline:none;font-family:inherit}
+img {max-width:100%;height:auto;vertical-align:middle}
+table, td{width:auto}
+table {max-width:100%; border-collapse: collapse;border-spacing:0}
+::selection {color:#fff;background:#09afeb}
+::-moz-selection {color:#fff;background:#09afeb}
+/*
+ol{list-style-type: disc}
+.ui-widget *, input,select,option {outline: none;}
+input,button,textarea, select{background:none;border:none;-moz-appearance:textfield;}
+li {list-style-type: none;}
+input::-webkit-outer-spin-button {-webkit-appearance: none;}
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+textarea {resize: vertical;}
+*/
