@@ -64,11 +64,11 @@ header .logo{display:inline-block}
 .logo img{vertical-align:middle}
 .sidebar {vertical-align:top}
 /* BACKGROUND */
-.current-menu-item,.menu-wrap .current-menu-parent {background:#0e1419}
+.menu-wrap .current-menu-item,.menu-wrap .current-menu-parent {background:#0e1419}
 .menu-side a:after, .read-more a:after {background:#ffe300}
 /* COLOR */
 .menu-side a {color:#0e1419}
-footer, header .current-menu-item a,.credit a {color:#fff}
+footer, .menu-wrap .current-menu-parent a,.menu-wrap .current-menu-item a,.credit a {color:#fff}
 /* FONT-SIZE */
 .menu-side ul {font-size:0}
 /* FONT-WEIGHT */
@@ -121,7 +121,7 @@ main {margin:2.143em 0}
 .filter li:before {content:"";transition:width .4s cubic-bezier(.8,0,.2,1);background:#000;position:absolute;top:0;left:0;width:0;height:100%;z-index:-1;}
 .filter li:hover:before {width:100%;}
 .filter li:hover {color:#fff}
-.date p {display:inline-block;opacity:0.8}
+.date p {display:inline-block;}
 /* CONTENT - ARTICLE
 ---------------------*/
 article h2 a:hover,article h3 a:hover,article h4 a:hover,article h5 a:hover,article h6 a:hover {color:#777}
@@ -167,13 +167,19 @@ article h2 a:hover,article h3 a:hover,article h4 a:hover,article h5 a:hover,arti
 
 /* CONTENT - ARTICLE / single
 ---------------------*/
-.single article .body {padding:0 8.333%}
+.single article .body {padding:0 8.333%;margin-top:16em}
 .single article .thumb {width:65.868%}
-.single article #toc_container {width:34.131%}
+.single article #toc_container {width:34.131%;margin-top:-16em}
+.single article .header {padding:1.75em 2em;background:#003399;color:#00ffff;position:relative;}
+.single article .text {margin-right:65%;}
+.single article .thumb {position:absolute;right:10%;top:45%;width:50%;}
+.single article .text a {color:#00ffff}
+.single article .text a:hover {color:#fff}
+.single .date {background:#fff;padding:2px 8px;} 
 article table {margin:1.5em 0}
 article thead {background:#000;color:#fff}
 article td {border:1px solid;text-align:center}
-article li {margin:0 0 0.75em 1.25em;padding:0 0 0 0.25em}
+article li {margin:0 0 0.75em 1.25em;padding:0 0 0 0.25em;line-height:1.6}
 /* CONTENT - SIDEBAR
 ---------------------*/
 .menu-side a {font-size:16px;line-height:2;padding:0 7px}

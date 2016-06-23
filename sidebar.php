@@ -6,10 +6,7 @@
 **/
 ?>
 <aside id="secondary">
-    
-    <?php wp_nav_menu(array('theme_location' => 'secondary', 'menu_class' => 'menu-side', 'container' => '')); 
-          dynamic_sidebar('sidebar-right');
-           ?>
+    <?php dynamic_sidebar('sidebar-left'); ?>
 </aside>
 
 

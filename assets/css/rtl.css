@@ -54,4 +54,4 @@ body.rtl {direction:rtl;font-family:'JF Flat Regular', Arial, sans-serif;}
 .rtl.archive article.no-thumb .icon {left:-10%;right:inherit}
 /* CONTENT - ARTICLE / single
 ---------------------*/
-.rtl article li {margin:0 1.25em 0.75em 0;padding:0 0.25em 0 0}
+.rtl article li {margin:0 1.25em 0.75em 0;padding:0 0.25em 0 0; line-height:1.8}
