@@ -11,5 +11,4 @@ while(have_posts()): the_post(); ?>
     <?php get_template_part('temps/content', 'single');
 
 endwhile;
-get_sidebar();
 get_footer(); ?>

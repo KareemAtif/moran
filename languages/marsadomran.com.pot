@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moran\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Jun 16 2016 02:08:05 GMT+0200 (Egypt Standard Time)\n"
-"POT-Revision-Date: Fri Jun 17 2016 01:43:47 GMT+0200 (Egypt Standard Time)\n"
+"POT-Creation-Date: Wed Jun 29 2016 21:27:38 GMT+0200 (Egypt Standard Time)\n"
+"POT-Revision-Date: Wed Jun 29 2016 21:46:32 GMT+0200 (Egypt Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: dev <go@kareematif.me>\n"
 "Language-Team: \n"
@@ -33,16 +33,70 @@ msgstr ""
 msgid "Secondary"
 msgstr ""
 
-#: ../functions.php:45
+#: ../functions.php:42
 msgid "Right Sidebar"
 msgstr ""
 
-#: ../archive.php:20
+#: ../functions.php:47
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../header.php:32
+msgid "تغيير اللغة"
+msgstr ""
+
+#: ../archive.php:16
+msgid "Use any of following items to filter content:"
+msgstr ""
+
+#: ../archive.php:21
 msgid "show all"
 msgstr ""
 
-#: ../temps/content.php:12 ../temps/content-feature.php:37
+#: ../temps/content-credit.php:10
+msgid "Except for "
+msgstr ""
+
+#: ../temps/content-credit.php:12
+msgid "theme design & develop"
+msgstr ""
+
+#: ../temps/content-credit.php:14
+msgid ", or mentioned elsewhere,"
+msgstr ""
+
+#: ../temps/content-credit.php:16
+msgid ""
+" This work is provided under a Creative Commons Attribution 4.0 "
+"International License."
+msgstr ""
+
+#: ../temps/content.php:15 ../temps/content.php:34 ../temps/content-feature.php:38
 msgid "Read more"
+msgstr ""
+
+#: ../temps/content-single.php:17
+msgid "Published on"
+msgstr ""
+
+#: ../temps/content-single.php:27
+msgid "Article Contents"
+msgstr ""
+
+#: ../temps/content-single-more.php:11
+msgid "Last Reviewed"
+msgstr ""
+
+#: ../temps/content-single-more.php:27
+msgid "Download Article"
+msgstr ""
+
+#: ../temps/content-single-more.php:34
+msgid "Share this Article"
+msgstr ""
+
+#: ../temps/content-external.php:14
+msgid "This will direct outside website"
 msgstr ""
 
 #: ../temps/content-null.php:8
@@ -50,7 +104,29 @@ msgid "There is no content here, please try again later"
 msgstr ""
 
 #: ../temps/content-feature.php:11
-msgid "Latest Articles"
+msgid "Latest Article"
+msgstr ""
+
+#: ../temps/content-about.php:10
+msgid "This website is a project of "
+msgstr ""
+
+#: ../temps/content-about.php:11 ../temps/content-about.php:14
+msgid "10 Tooba"
+msgstr ""
+
+#: ../temps/content-about.php:15
+msgid ""
+" works on applied research, where a continuous loop of lessons learned from "
+"the ground inform our analysis, and our research informs our applications."
+msgstr ""
+
+#: ../inc/share.php:16
+msgid "Share on Facebook"
+msgstr ""
+
+#: ../inc/share.php:21
+msgid "Tweet this"
 msgstr ""
 
 #: ../inc/custom-taxonomy.php:12

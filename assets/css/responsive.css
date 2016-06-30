@@ -1,0 +1,146 @@
+/*
+Description: MEDIA.CSS || Media queries
+Version: 1.0b
+Author: Kareem Atif
+Author URI: http://kareematif.me
+Email: Kareematif@gmail.com | Twitter: @kareematif
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+---------------------------------------------------*/
+@media only screen and (min-width:1440px){
+/* BODY
+---------------------*/
+body {font-size:16px;font-size:1em}
+/* CONTAINERS
+---------------------*/
+h1 {font-size:36px;font-size:2.25rem}
+h2 {font-size:32px;font-size:2rem}
+h3 {font-size:28px;font-size:1.75rem}
+h4 {font-size:24px;font-size:1.5rem}
+h5 {font-size:20px;font-size:1.25rem}
+h6 {font-size:18px;font-size:1.125rem}
+p {}
+/* CONTAINERS
+---------------------*/
+.col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3, .col2, .col1 {margin:0 10px}
+.con12 {width:1140px}
+.col12 {width:1120px}
+.col11 {width:1025px}
+.col10 {width:930px}
+.col9 {width:835px}
+.col8 {width:740px}
+.col7 {width:645px}
+.col6 {width:550px}
+.col5 {width:455px}
+.col4 {width:360px}
+.col3 {width:265px}
+.col2 {width:170px}
+.col1 {width:75px}
+.x11 {margin-left:1045px}
+.x10 {margin-left:950px}
+.x9 {margin-left:855px}
+.x8 {margin-left:760px}
+.x7 {margin-left:665px}
+.x6 {margin-left:570px}
+.x5 {margin-left:455px}
+.x4 {margin-left:380px}
+.x3 {margin-left:285px}
+.x2 {margin-left:190px}
+.x1 {margin-left:95px}
+
+/* HEADER
+---------------------*/
+header .logo {width:170px}
+.show-menu {display:none}
+.show-lang {background:#000;padding:58px 18px}
+.show-lang:hover {background:#fff}
+.show-lang .icon {width:35px;height:50px}
+.show-lang p {color:#fff;font-size:1em}
+.show-lang:hover p {color:#000}
+.menu-wrap {display:block;width:835px;}
+.menu-wrap li {width:33.33333%;}
+.menu-wrap li:nth-of-type(2) {margin:0 20px}
+.menu-wrap a {padding:41px 50px;font-size:1.5em}
+
+/* CONTENT
+---------------------*/
+main{margin:1.875em 0}
+
+/* CONTENT - ARTICLE / archive
+---------------------*/
+.archive article {width:310px;height:410px;float:left} 
+.archive article .icon a {font-size:3em}
+.archive article .icon:after {height:5px}
+.archive article .text {padding:1.25em 2.5em;height:calc(100% - 2.5em)}
+.archive article .entry {font-size:0.813em}
+.archive article.has-thumb {/*width:290px;*/}
+/*.archive article.has-thumb .text {height:calc(40% - 2.5em)}*/
+.archive article.no-thumb .icon{font-size:15em}
+/*.archive article.external .icon:after {width:48px;}*/
+/* CONTENT - ARTICLE / single
+---------------------*/
+.single .article-sidebar {float:right;width:285px;clear:both;}
+.single .article-contents {border-right:2px solid #000}
+.single .article-contents.fixed-widget {position:fixed;top:20px;}
+.single article.has-thumb .header {min-height:275px;overflow:hidden}
+.single article.has-thumb .text {background:transparent;float:right;width:45%;padding-bottom:0}
+.single article.has-thumb .text span {background:#7fdbff;padding:0 8px}
+.single article.has-thumb .text h1 span {background:#fff}
+.single article.has-thumb .text h5 span:hover {background:#ffdc00}
+.single article .thumb {max-height:100%;z-index:-2;position:absolute;}
+.single article .body, .single article .thumb {width:645px}
+.single article .body {padding:0 15px;} 
+
+/*.single article.has-thumb .text {position:absolute;bottom:-25%}*/
+/*.single article.has-thumb .body {margin-top:160px}*/
+
+
+}
+
+/*------------------------------------------  
+   WIDTH < 479px
+--------------------------------------------*/
+@media only screen and (max-width: 479px) {
+/* HEADER
+---------------------*/	
+header .logo, .show-menu, .show-lang {margin:0 5px}
+header .logo {width:90px}
+.show-menu {padding:33.5px 30px;}
+.show-menu .icon {width: 30px;height: 23px;}
+.show-menu span {height:3px}
+.show-menu span:nth-child(2) {top: 10px;}
+.show-menu span:nth-child(3) {top: 20px;}
+.show-lang {padding:25.5px 23px;}	
+.show-lang .icon,.show-lang li {width: 40px;height:35px}
+.show-lang p {font-size:1em;line-height: 1.4}
+}
+/*------------------------------------------  
+   WIDTH > 960px
+--------------------------------------------*/
+/*@media only screen and (min-width:960px){
+/* CONTAINERS
+---------------------*/	
+/*.col12 {width:940;padding:0 10px}
+.col11 {width:1025px}
+.col10 {width:930px}
+.col9 {width:835px}
+.col8 {width:740px}
+.col7 {width:645px}
+.col6 {width:550px}
+.col5 {width:455px}
+.col4 {width:360px}
+.col3 {width:265px}
+.col2 {width:140px}
+.col1 {width:60px}
+.x11 {margin-left:1045px}
+.x10 {margin-left:950px}
+.x9 {margin-left:855px}
+.x8 {margin-left:760px}
+.x7 {margin-left:665px}
+.x6 {margin-left:570px}
+.x5 {margin-left:455px}
+.x4 {margin-left:380px}
+.x3 {margin-left:285px}
+.x2 {margin-left:190px}
+.x1 {margin-left:95px}
+}

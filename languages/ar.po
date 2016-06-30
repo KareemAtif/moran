@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moran\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Jun 16 2016 02:08:05 GMT+0200 (Egypt Standard Time)\n"
-"PO-Revision-Date: Fri Jun 17 2016 02:09:33 GMT+0200 (Egypt Standard Time)\n"
+"POT-Creation-Date: Wed Jun 29 2016 21:27:38 GMT+0200 (Egypt Standard Time)\n"
+"PO-Revision-Date: Thu Jun 30 2016 01:57:45 GMT+0200 (Egypt Standard Time)\n"
 "Last-Translator: dev <go@kareematif.me>\n"
 "Language-Team: \n"
 "Language: Arabic\n"
@@ -31,13 +31,21 @@ msgstr ""
 msgid "Secondary"
 msgstr ""
 
-#: ../functions.php:45
+#: ../functions.php:42
 msgid "Right Sidebar"
 msgstr ""
 
-#: ../archive.php:20
-msgid "show all"
+#: ../functions.php:47
+msgid "Left Sidebar"
 msgstr ""
+
+#: ../header.php:32
+msgid "تغيير اللغة"
+msgstr "Change language"
+
+#: ../temps/content-about.php:10
+msgid "This website is a project of "
+msgstr "هذا الموقع هو أحد مشروعات"
 
 #: ../inc/custom-taxonomy.php:12
 msgctxt "Taxonomy General Name"
@@ -119,6 +127,16 @@ msgstr ""
 
 #: ../inc/custom-taxonomy.php:31
 msgid "Items list navigation"
+msgstr ""
+
+#: ../inc/custom-posttype.php:11
+msgctxt "General Name"
+msgid "Policy Analysis Articles"
+msgstr ""
+
+#: ../inc/custom-posttype.php:12
+msgctxt "Singular Name"
+msgid "Policy Analysis Article"
 msgstr ""
 
 #: ../inc/custom-posttype.php:14
@@ -233,10 +251,6 @@ msgstr ""
 msgid "Archive about urbans"
 msgstr ""
 
-#: ../inc/customizer.php:10 ../inc/customizer.php:16
-msgid "Logo"
-msgstr ""
-
 #. Name of the theme
 msgid "moran"
 msgstr ""
@@ -257,27 +271,88 @@ msgstr ""
 msgid "http://kareematif.me"
 msgstr ""
 
-#: ../temps/content.php:12 ../temps/content-feature.php:37
+#: ../archive.php:16
+msgid "Use any of following items to filter content:"
+msgstr "اختر أحد الموضوعات لإظهار محتواه"
+
+#: ../archive.php:21
+msgid "show all"
+msgstr "إظهار الكل"
+
+#: ../temps/content-credit.php:10
+msgid "Except for "
+msgstr "فيما عدا "
+
+#: ../temps/content-credit.php:12
+msgid "theme design & develop"
+msgstr " تصميم وتطوير الموقع"
+
+#: ../temps/content-credit.php:14
+msgid ", or mentioned elsewhere,"
+msgstr ", أو ما لم يذكر غير ذلك,"
+
+#: ../temps/content-credit.php:16
+msgid ""
+" This work is provided under a Creative Commons Attribution 4.0 "
+"International License."
+msgstr "فإن هذا العمل مُرخص برخصة المشاع الإبداعي نَسب المُصنَّف 4.0 دولي."
+
+#: ../temps/content.php:15 ../temps/content.php:34 ../temps/content-feature.php:38
 msgid "Read more"
-msgstr "اقرأ المزيد"
+msgstr "إقرأ المزيد"
+
+#: ../temps/content-single.php:17
+msgid "Published on"
+msgstr "نُشرت في"
+
+#: ../temps/content-single.php:27
+msgid "Article Contents"
+msgstr "المحتويات"
+
+#: ../temps/content-single-more.php:11
+msgid "Last Reviewed"
+msgstr "تم تنقيحها في"
+
+#: ../temps/content-single-more.php:27
+msgid "Download Article"
+msgstr "تحميل المقالة"
+
+#: ../temps/content-single-more.php:34
+msgid "Share this Article"
+msgstr "شارك هذه المقالة"
+
+#: ../temps/content-external.php:14
+msgid "This will direct outside website"
+msgstr "الرابط يعرض خارج الموقع"
 
 #: ../temps/content-null.php:8
 msgid "There is no content here, please try again later"
-msgstr "لا يوجد محتوى، برجاء المحاولة لاحقاً"
+msgstr "لا يوجد محتوى، برجاء المحاولة لاحقاً."
 
 #: ../temps/content-feature.php:11
-msgid "Latest Articles"
+msgid "Latest Article"
 msgstr "أحدث مقالة"
 
-#: ../inc/custom-posttype.php:11
-msgctxt "General Name"
-msgid "Policy Analysis Articles"
-msgstr "مقالات تحليل سياسات"
+#: ../temps/content-about.php:11 ../temps/content-about.php:14
+msgid "10 Tooba"
+msgstr "10 طوبة"
 
-#: ../inc/custom-posttype.php:12
-msgctxt "Singular Name"
-msgid "Policy Analysis Article"
-msgstr "مقالة تحليل سياسات"
+#: ../temps/content-about.php:15
+msgid ""
+" works on applied research, where a continuous loop of lessons learned from "
+"the ground inform our analysis, and our research informs our applications."
+msgstr ""
+"تعمل على الدراسات والتطبيقات العمرانية في دورة متصلة ما بين تضمين الدروس "
+"المكتسبة من العمل على أرض الواقع في دراساتها، وتطبيق التحليلات على الأرض من "
+"خلال مشاريع التطوير العمراني والمجتمعي بالمشاركة.\n"
+
+#: ../inc/share.php:16
+msgid "Share on Facebook"
+msgstr "شارك على فيسبوك"
+
+#: ../inc/share.php:21
+msgid "Tweet this"
+msgstr "غرّد"
 
 #: ../inc/custom-posttype.php:13 ../inc/custom-posttype.php:27
 msgid "Policy Analysis"
@@ -294,3 +369,7 @@ msgstr "أبحاث ومقالات"
 #: ../inc/custom-posttype.php:136 ../inc/custom-posttype.php:150
 msgid "Urban Archive"
 msgstr "أرشيف العمران"
+
+#: ../inc/customizer.php:10 ../inc/customizer.php:16
+msgid "Logo"
+msgstr "اللوجو"

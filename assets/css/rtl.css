@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   BODY
 ---------------------*/
 body.rtl {direction:rtl;font-family:'JF Flat Regular', Arial, sans-serif;}
-.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6, .rtl li a,.rtl .read-more a,.rtl .filter li,.rtl .date p {font-family:'Droid Arabic Kufi', sans-serif;}
+.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6, .rtl li a,.rtl .read-more a,.rtl .filter li,.rtl .date p,.rtl footer p,.rtl footer form span.wpcf7-not-valid-tip, .rtl .response-wrap  {font-family:'Droid Arabic Kufi', sans-serif;}
 .rtl p {font-family:"JF Flat Regular", Arial;line-height:1.8em}
 
 /* GENERAL
@@ -43,7 +43,7 @@ body.rtl {direction:rtl;font-family:'JF Flat Regular', Arial, sans-serif;}
 /* CONTENT
 ---------------------*/
 .rtl .filter li {float:right}
-.rtl .filter li:before {right:0;left:inherit}
+.rtl .filter li:before,.rtl .item:before {right:0;left:inherit}
 /* CONTENT - ARTICLE / featured
 ---------------------*/
 .rtl .featured .title {right:10%;left:inherit}
@@ -54,4 +54,14 @@ body.rtl {direction:rtl;font-family:'JF Flat Regular', Arial, sans-serif;}
 .rtl.archive article.no-thumb .icon {left:-10%;right:inherit}
 /* CONTENT - ARTICLE / single
 ---------------------*/
-.rtl article li {margin:0 1.25em 0.75em 0;padding:0 0.25em 0 0}
+.rtl.single .article-sidebar {float:left;}
+.rtl article .body li {margin:0 1.25em 0.75em 0;padding:0 0.25em 0 0; line-height:1.8}
+.rtl.single .endnotes ol span {margin-left:5px;margin-right:0}
+.rtl.single .endnotes li {margin:0;padding:0}
+.rtl .download p {direction:ltr;text-align:right}
+.rtl.single article.has-thumb .text {float:left}
+/* FOOTER
+---------------------*/
+.rtl footer .logo-text {background-position:0 22px;}
+.rtl footer form input,.rtl footer form textarea {font-family:'Droid Arabic Kufi',sans-serif}
+/*.rtl footer p,.rtl footer p a {font-size: 0.75em}*/ 

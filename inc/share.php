@@ -24,7 +24,7 @@ function share_article(){
     );
     echo '<ul class="share">';
         foreach ($services as $name => $service) {
-            echo '<li>';
+            echo '<li class="'. $name .'">';
             $href = sprintf($service['url'], $url, urlencode($title));
             $icon = $service['i'];
             echo '<a href="'. $href .'" title="'.$service['t'].'" target="_blank">'. $icon .'</a>';

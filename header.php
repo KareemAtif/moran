@@ -39,7 +39,7 @@
   <main class="clearfix">
       <div class="con12 centered">
         <div class="col2">
-            <?php get_sidebar('sidebar'); ?>    
+            <?php wp_nav_menu(array('theme_location' => 'secondary', 'menu_class' => 'menu-side', 'container' => '')); ?>    
         </div>
         <div class="col10">
             

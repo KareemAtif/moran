@@ -20,12 +20,14 @@ if (!function_exists('moran_setup')){
     // Add Navigation
     register_nav_menus(array(
       'primary'   => __('Primary' , 'moran'),
-      'secondary' => __('Secondary', 'moran')
+      'secondary' => __('Secondary', 'moran'),
+      'footer' => __('Footer', 'moran')
     ));
     // Support Post Thumbnails
     add_theme_support('post-thumbnails');
     add_image_size('feature', 835 ,470, true, array('right', 'top'));
     add_image_size('square', 310 ,310, true, array('right', 'top'));
+    add_image_size('single', 930,523, true, array('right', 'top'));
   }
 }
 add_action('after_setup_theme', 'moran_setup');
@@ -50,7 +52,19 @@ function moran_widget() {
 }
 add_action('widgets_init', 'moran_widget');
 // Enqueue theme Styles and Scripts
-function scripts(){
+function style_script(){
+  // Add Reset.css
+  wp_register_style('theme-reset', get_template_directory_uri(). '/assets/css/reset.css','', filemtime(get_stylesheet_directory(). '/assets/css/reset.css'));
+  wp_enqueue_style('theme-reset');
+  // Add Global.css
+  wp_register_style('theme-globe', get_template_directory_uri(). '/assets/css/globe.css', '', filemtime(get_stylesheet_directory(). '/assets/css/globe.css'));
+  wp_enqueue_style('theme-globe');
+  // Add Media.css
+  wp_register_style('theme-responsive', get_template_directory_uri(). '/assets/css/responsive.css', '', filemtime(get_stylesheet_directory(). '/assets/css/responsive.css'));
+  wp_enqueue_style('theme-responsive');
+  // Add RTL.css
+  wp_register_style('theme-rtl', get_template_directory_uri(). '/assets/css/rtl.css', '', filemtime(get_stylesheet_directory(). '/assets/css/rtl.css'));
+  wp_enqueue_style('theme-rtl');
   // Add jQuery UI
   wp_register_script('jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', '', '1.11.4', true);
   wp_enqueue_script('jquery-ui');
@@ -58,7 +72,7 @@ function scripts(){
   wp_register_script('theme-script', get_template_directory_uri() . '/assets/js/script.js', '', filemtime(get_stylesheet_directory() . '/assets/js/script.js'), true);
   wp_enqueue_script('theme-script');
 }
-add_action('wp_enqueue_scripts', 'scripts');
+add_action('wp_enqueue_scripts', 'style_script');
 // Updgrade jQuery library
 function jquery_update(){
   if(!is_admin()) {

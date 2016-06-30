@@ -15,7 +15,11 @@ get_header();
     <div class="header clearfix">
         <h6><?php echo _e('Use any of following items to filter content:', 'moran'); ?></h6>
         <ul class="filter">
-        <?php foreach ($post_types as $post_type): ?>
+        <?php foreach ($post_types as $post_type): 
+            $exclude = array('wpcf7_contact_form');
+            if(TRUE === in_array($post_type->name, $exclude))
+            continue;
+            ?>
             <li class="<?php echo $post_type->name; ?>"><?php echo $post_type->labels->menu_name; ?></li>
         <?php endforeach; ?>
             <li class="show-all"><?php echo _e('show all', 'moran'); ?></li>

@@ -12,15 +12,15 @@ BODY
 body {margin-top:45px;font-family:'Open Sans', sans-serif;font-size:14px;}
 a {color:#000}
 a:hover {}
-h1, h2, h3, h4, h5, h6, li a, .read-more a,.filter li,.date p {font-family:'Oswald', sans-serif;}
+h1, h2, h3, h4, h5, h6, li a, .read-more a,.filter li,.date p,footer p,footer form span.wpcf7-not-valid-tip {font-family:'Oswald', sans-serif;}
 h1 {font-size:32px;font-size:2em}
 h2 {font-size:26px;font-size:1.625em}
 h3 {font-size:21px;font-size:1.313em}
 h4 {font-size:18px;font-size:1.125em}
 h5 {font-size:16px;font-size:1em}
 h6 {font-size:14px;font-size:0.875em}
-p {margin:1em 0; line-height:1.6em;color:rgba(0,0,0,0.8)}
-
+p {margin:0 0 1.75em; line-height:1.6em;}
+article p {color:rgba(0,0,0,0.8)}
 /* GENERAL
 ---------------------*/
 .col12, .col11, .col10, .col9, .col8, .col7, .col6, .col5, .col4, .col3, .col2, .col1 {margin:0 1%;display:inline;float:left}
@@ -54,6 +54,10 @@ article {margin:1.6em 0}
 main .header, main .body, main .footer {margin:0.85em 0}
 article .header, article .body, article .footer {margin:1.75em 0}
 
+.widget-wrap {display:flex}
+.widget-wrap:after {clear:both;content:"";display:table;}
+
+
 /* Collected
 ---------------------*/
 /* DISPLAY */
@@ -64,15 +68,16 @@ header .logo{display:inline-block}
 .logo img{vertical-align:middle}
 .sidebar {vertical-align:top}
 /* BACKGROUND */
-.current-menu-item,.menu-wrap .current-menu-parent {background:#0e1419}
+.menu-wrap .current-menu-item,.menu-wrap .current-menu-parent {background:#0433ff;border-color:#0433ff}
 .menu-side a:after, .read-more a:after {background:#ffe300}
 /* COLOR */
 .menu-side a {color:#0e1419}
-footer, header .current-menu-item a,.credit a {color:#fff}
+
+ .menu-wrap .current-menu-parent a,.menu-wrap .current-menu-item a {color:#00fdff}
 /* FONT-SIZE */
 .menu-side ul {font-size:0}
 /* FONT-WEIGHT */
-.menu-side a,.credit p, .read-more{font-weight:bold}
+.menu-side a, .read-more{font-weight:bold}
 .credit a {font-weight:normal}
 /* POSITION */
 .featured .title, .menu-side a:after,.read-more a:after,.show-menu span {position:absolute}
@@ -121,7 +126,6 @@ main {margin:2.143em 0}
 .filter li:before {content:"";transition:width .4s cubic-bezier(.8,0,.2,1);background:#000;position:absolute;top:0;left:0;width:0;height:100%;z-index:-1;}
 .filter li:hover:before {width:100%;}
 .filter li:hover {color:#fff}
-.date p {display:inline-block;opacity:0.8}
 /* CONTENT - ARTICLE
 ---------------------*/
 article h2 a:hover,article h3 a:hover,article h4 a:hover,article h5 a:hover,article h6 a:hover {color:#777}
@@ -148,7 +152,7 @@ article h2 a:hover,article h3 a:hover,article h4 a:hover,article h5 a:hover,arti
 .archive article.has-thumb .thumb {height:60%;overflow:hidden;position:relative}
 .archive article.has-thumb .thumb:after {content: '';position:absolute;top:0;right:0;bottom:0;left:0;box-shadow:inset 0 0 0 0 rgba(255,243,0,1);transition: box-shadow .3s ease;}
 .archive article.has-thumb .thumb:hover:after {box-shadow: inset 0 0 0 15px rgba(255,243,0,1);}
-.archive article.has-thumb .text {height:calc(40% - 2.858em);background:#fff300;display:flex;flex-direction:column;justify-content:center}
+.archive article.has-thumb .text {height:40%;background:#fff300;display:flex;flex-direction:column;justify-content:center}
 .archive article.has-thumb .read-more a:after {background:#fff!important}
 .archive article.no-thumb {text-align:initial}
 .archive article.no-thumb .icon{position:absolute;top:-5%;right:-15px;font-size:17.143em;z-index:-1;color:#fff300}
@@ -167,13 +171,46 @@ article h2 a:hover,article h3 a:hover,article h4 a:hover,article h5 a:hover,arti
 
 /* CONTENT - ARTICLE / single
 ---------------------*/
-.single article .body {padding:0 8.333%}
-.single article .thumb {width:65.868%}
-.single article #toc_container {width:34.131%}
-article table {margin:1.5em 0}
+.single article .header {position:relative;}
+.header .date p {display:inline-block;margin:0}
+.single article .article-contents {/*background:#fff;*/padding:10px 15px}
+.single article .article-contents ul {list-style:none;font-size:0.875em;font-weight:bold}
+.single article .article-contents h5 {font-weight:normal}
+.single article .article-contents a {opacity:1}
+.single article .article-contents a:hover {opacity:0.7}
+/*.single article .article-contents li {margin:0;padding:0;line-height:1}*/
+.single article #toc_container {display:none}
+.single article .text {padding:1.75em 2em;background:#7fdbff;color:#111}
+.single article .text a {color:#111}
+.single article .thumb {}
+.single article .body {padding:0 5%;}
+.single .endnotes {margin-top: 2.25em;padding: 0.75em 0;color:#777}
+.single .endnotes h3:before {content:"";width:100%;height:5px;position:absolute;background:#777;top:50%;z-index:-2}
+.single .endnotes h3 {position:relative}
+.single .endnotes h3 span {background:#fff;padding: 0 10px;margin: 0 20px;}
+.single article sup {font-size:0.875em;font-weight:bold}
+.single article .endnotes li {margin:0;padding:0;font-size:0.875em}
+.single .endnotes ol span {margin-right:5px}
+.single .endnotes a {color: #777}
+.single .endnotes a:hover {color: #000}
+.single .header .date {background:#fff;padding:2px 8px;display:inline-block}
+ 
+article table {margin:1.5em 0;font-size:0.857em;border:2px solid}
 article thead {background:#000;color:#fff}
 article td {border:1px solid;text-align:center}
-article li {margin:0 0 0.75em 1.25em;padding:0 0 0 0.25em}
+article .body li {margin:0 0 0.75em 1.25em;padding:0 0 0 0.25em;line-height:1.6}
+article .footer {display:flex;/*padding:1em 1.75em;border:2px solid*/}
+.footer .item {padding:20px;border:2px solid #000;width:33.334%;margin:0 10px;position:relative;transition:color .7s;/*margin-bottom:1em*/}
+.footer .item:hover p, .footer .item:hover a,.footer .item:hover h6, .footer .item:hover i {color:#fff}
+.footer .item:before {content:"";transition:width .4s cubic-bezier(.8,0,.2,1);background:#000;position:absolute;top:0;left:0;width:0;height:100%;z-index:-1;}
+.footer .item:hover:before {width:100%;}
+/*.footer .item.share:before {background:transparent}*/
+.footer .item.fb:before {background:#3b5998}
+.footer .item.tw:before {background:#55acee}
+.item .icon, .item .info {display:inline-block;vertical-align:middle;margin:0 5px}
+.item .icon {font-size:2.75em}
+.item p {margin:0;color:#777}
+.share li{display:inline-block;list-style:none;font-size:1.75em;margin:0 10px;}
 /* CONTENT - SIDEBAR
 ---------------------*/
 .menu-side a {font-size:16px;line-height:2;padding:0 7px}
@@ -181,6 +218,35 @@ article li {margin:0 0 0.75em 1.25em;padding:0 0 0 0.25em}
 .menu-side a:hover:after, .read-more a:hover:after {width:100%} 
 /* FOOTER
 ---------------------*/
-footer {background:#252525;padding:50px 0;}
-footer p {font-size:12px;color:#777}
+footer {background:#ddd;}
+footer .widget, footer .footer-credit {padding:25px 35px;}
+footer .widget {margin:0!important}
+footer .widget:nth-child(1){font-size:0.815em}
+footer .widget:nth-child(2){font-weight:bold}
+footer .col6.widget {background:#ffdc00;display:flex;align-items:center}
+footer .about p:nth-child(1){font-weight:bold}
+footer .logo-text {background:url(../img/footer-logo-10t.png);height:20px;width:80px;color:transparent;display:inline-block;background-size:cover;vertical-align:middle}
+footer .logo-text:hover {-webkit-filter: invert(100%);}
+footer form {}
+footer form .form-field {margin-bottom:0.815em;position:relative}
+footer form input,footer form textarea {padding:0.5em 0.75em;width:100%;font:normal 0.75em 'Oswald', sans-serif;border-bottom:2px solid transparent;background:rgba(0,0,0,0.2);color:#000;transition: all 0.1s}
+footer form input:focus,footer form textarea:focus {border-bottom-color:#000;background:#fff;}
+footer form .captcha-field {display:inline-block;margin-bottom:0}
+footer form .captcha-field input {width:auto;padding:0;text-align:center}
+footer form .action-field {display:inline-block;margin-bottom:0;float:left}
+footer form .submit {width:auto;background:#000;color:#ffdc00;padding:5px 20px;cursor:pointer;border:1px solid #000;transition:all .2s linear;font-weight:bold}
+footer form .submit:hover, footer form .submit:focus {background:#fff;color:#000;}
+footer form .ajax-loader {display:none}
+footer form .response-wrap div{border:none;margin:0;color:#ff4163;font-size:0.8em;border:1px solid}
+footer form span.wpcf7-not-valid-tip {font-size:0.75em;color:#ff4163;font-weight:normal}
+footer .footer-credit {background:#111;color:#fff;}
+footer .footer-credit .icon,footer .footer-credit p {display:inline-block;vertical-align:middle;margin:0 5px}
+footer .footer-credit .icon {font-size:2em;}
+footer .footer-credit p{font-size:0.75em}
+footer .footer-credit a {color:#a0a5aa;font-weight:bold}
+footer .footer-credit a:hover {color:#ffdc00}
+/*footer p,footer p a {font-size:0.813em}*/
+
+/*footer p {font-size:12px;color:#777}
 footer p a:hover {text-decoration:underline}
+*/

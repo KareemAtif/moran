@@ -24,11 +24,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   Yellow:        #ffd140
   
   CSS
----------------------*/
-@import url(assets/css/reset.css?ver=0.662222110);
-@import url(assets/css/globe.css?ver=0.6622133222200);
-@import url(assets/css/media.css?ver=0.66222132010);
-@import url(assets/css/rtl.css?ver=0.6610223302);
+---------------------
+	** All style files has been moved to functions.php
   
 /* FONTS
 ---------------------*/
