@@ -5,9 +5,10 @@
 * @name Footer Template
 **/
  ?>
-        </div>
+          </div>
+      </div>
     </div>
- </main>
+  </main>
  <footer class="clearfix">
      <div class="centered">
         <div class="widget-wrap x7">
@@ -22,9 +23,9 @@
                 <?php get_template_part('temps/footer', 'contact'); ?>
             </div>
         </div>
-        
+
      </div>
-     <div class="footer-credit x7"><?php get_template_part('temps/footer', 'credit'); ?></div>   
+     <div class="footer-credit x7"><?php get_template_part('temps/footer', 'credit'); ?></div>
      </footer>
      <?php wp_footer(); ?>
 </body>

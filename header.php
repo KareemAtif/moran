@@ -15,8 +15,9 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header class="clearfix">
-      <div class="con12 centered">
+  <header>
+    <div class="container">
+      <div class="row">
         <?php if(get_theme_mod('moran_logo')): ?>
         <a class="logo" href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo esc_url(get_theme_mod('moran_logo')); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"></a>
         <?php else: ?>
@@ -33,13 +34,14 @@
             </div>
             <?php pll_the_languages(array('hide_current'=> 1)); ?>
         </div>
-      <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'menu-row', 'container_class' => 'menu-wrap')); ?>
-      </div>  
+        <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'menu-row', 'container_class' => 'menu-wrap')); ?>
+      </div>
+    </div>
   </header>
-  <main class="clearfix">
-      <div class="con12 centered">
-        <div class="col2">
-            <?php wp_nav_menu(array('theme_location' => 'secondary', 'menu_class' => 'menu-side', 'container' => '')); ?>    
-        </div>
-        <div class="col10">
-            
+  <main>
+    <div class="container">
+      <div class="row">
+          <div class="col-fifth-one">
+            <?php wp_nav_menu(array('theme_location' => 'secondary', 'menu_class' => 'menu-side', 'container' => '')); ?>
+          </div>
+          <div class="col-fifth-five">

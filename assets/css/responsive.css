@@ -7,9 +7,84 @@ Email: Kareematif@gmail.com | Twitter: @kareematif
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ---------------------------------------------------*/
-@media only screen and (min-width:1440px){
+/* Shared
+---------------------------------------------------*/
+@media only screen and (min-width:768px) {
+body {font-size:16px}
+h1 {font-size:36px;font-size:2.25rem}
+h2 {font-size:32px;font-size:2rem}
+h3 {font-size:28px;font-size:1.75rem}
+h4 {font-size:24px;font-size:1.5rem}
+h5 {font-size:20px;font-size:1.25rem}
+h6 {font-size:18px;font-size:1.125rem}
+/* HEADER
+---------------------*/
+.show-menu, .show-lang {display:none}
+}
+/* Min-Width = 1140px
+---------------------------------------------------*/
+@media only screen and (min-width:1140px){
+/* GRID
+---------------------*/
+.container {width:1140px}
+[class^="col"] {margin:0 10px}
+.col1 {width:75px}
+.col2 {width:170px}
+.col3 {width:265px}
+.col4 {width:360px}
+.col5 {width:455px}
+.col6 {width:550px}
+.col7 {width:645px}
+.col8 {width:740px}
+.col9 {width:835px}
+.col10 {width:930px}
+.col11 {width:1025px}
+.col12 {width:1120px}
+/* HEADER
+---------------------*/
+.show-menu {display:none}
+}
+/* Max-Width = 768px
+---------------------------------------------------*/
+@media only screen and (max-width:768px){
+/* GRID
+---------------------*/
+.container {width:768px}
+[class^="col"] {margin:0 1.302%}
+.col1 {width:5.729%}
+.col2 {width:14.062%}
+.col3 {width:22.396%}
+.col4 {width:30.729%}
+.col5 {width:37.76%}
+.col6 {width:48.698%}
+.col7 {width:55.729%}
+.col8 {width:64.062%}
+.col9 {width:72.396%}
+.col10 {width:80.729%}
+.col11 {width:89.062%}
+.col12 {width:97.396%}
+/* HEADER
+---------------------*/
+
+}
+/* Max-Width = 479px
+---------------------------------------------------*/
+@media only screen and (max-width:480px){
+/* GRID
+---------------------*/
+.container {width:480px}
+[class^="col"] {margin:0 10px}
+.col1,.col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {width:100%}
+}
+
+
+
+
+
+
 /* BODY
 ---------------------*/
+@media only screen and (min-width:1440px){
 body {font-size:16px;font-size:1em}
 /* CONTAINERS
 ---------------------*/
@@ -68,7 +143,7 @@ main{margin:1.875em 0}
 
 /* CONTENT - ARTICLE / archive
 ---------------------*/
-.archive article {width:310px;height:410px;float:left} 
+.archive article {width:310px;height:410px;float:left}
 .archive article .icon a {font-size:3em}
 .archive article .icon:after {height:5px}
 .archive article .text {padding:1.25em 2.5em;height:calc(100% - 2.5em)}
@@ -89,7 +164,7 @@ main{margin:1.875em 0}
 .single article.has-thumb .text h5 span:hover {background:#ffdc00}
 .single article .thumb {max-height:100%;z-index:-2;position:absolute;}
 .single article .body, .single article .thumb {width:645px}
-.single article .body {padding:0 15px;} 
+.single article .body {padding:0 15px;}
 
 /*.single article.has-thumb .text {position:absolute;bottom:-25%}*/
 /*.single article.has-thumb .body {margin-top:160px}*/
@@ -97,12 +172,12 @@ main{margin:1.875em 0}
 
 }
 
-/*------------------------------------------  
+/*------------------------------------------
    WIDTH < 479px
 --------------------------------------------*/
 @media only screen and (max-width: 479px) {
 /* HEADER
----------------------*/	
+---------------------*/
 header .logo, .show-menu, .show-lang {margin:0 5px}
 header .logo {width:90px}
 .show-menu {padding:33.5px 30px;}
@@ -110,16 +185,16 @@ header .logo {width:90px}
 .show-menu span {height:3px}
 .show-menu span:nth-child(2) {top: 10px;}
 .show-menu span:nth-child(3) {top: 20px;}
-.show-lang {padding:25.5px 23px;}	
+.show-lang {padding:25.5px 23px;}
 .show-lang .icon,.show-lang li {width: 40px;height:35px}
 .show-lang p {font-size:1em;line-height: 1.4}
 }
-/*------------------------------------------  
+/*------------------------------------------
    WIDTH > 960px
 --------------------------------------------*/
 /*@media only screen and (min-width:960px){
 /* CONTAINERS
----------------------*/	
+---------------------*/
 /*.col12 {width:940;padding:0 10px}
 .col11 {width:1025px}
 .col10 {width:930px}
