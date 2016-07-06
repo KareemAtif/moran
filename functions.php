@@ -25,7 +25,7 @@ if (!function_exists('moran_setup')){
     ));
     // Support Post Thumbnails
     add_theme_support('post-thumbnails');
-    add_image_size('feature', 835 ,470, true, array('right', 'top'));
+    add_image_size('feature', 1200 ,864, true, array('right', 'top'));
     add_image_size('square', 310 ,310, true, array('right', 'top'));
     add_image_size('single', 930,523, true, array('right', 'top'));
   }
@@ -68,6 +68,12 @@ function style_script(){
   // Add jQuery UI
   wp_register_script('jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js', '', '1.11.4', true);
   wp_enqueue_script('jquery-ui');
+  // Add imagesLoaded
+  wp_register_script('imagesLoaded', '//npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js' );
+  wp_enqueue_script('imagesLoaded');
+  // Add isotop
+  wp_register_script('isotope', '//npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js');
+  wp_enqueue_script('isotope');
   // Add Script.JS
   wp_register_script('theme-script', get_template_directory_uri() . '/assets/js/script.js', '', filemtime(get_stylesheet_directory() . '/assets/js/script.js'), true);
   wp_enqueue_script('theme-script');

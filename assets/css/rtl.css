@@ -10,67 +10,32 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   BODY
 ---------------------*/
 body.rtl {direction:rtl;font-family:'JF Flat Regular', Arial, sans-serif;}
-.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6, .rtl a, .rtl li:not(article), footer form > *, .date p{font-family:'Droid Arabic Kufi', sans-serif;}
+.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6, .rtl a, .rtl li:not(article),.rtl form *, .date p{font-family:'Droid Arabic Kufi', sans-serif;}
 .rtl p {line-height:1.8}
 /* GRID
 ---------------------*/
-.rtl [class^="col"] {float:right}
-
-
-
-
-.rtl h1, .rtl h2, .rtl h3, .rtl h4, .rtl h5, .rtl h6, .rtl li a,.rtl .read-more a,.rtl .filter li,.rtl .date p,.rtl footer p,.rtl footer form span.wpcf7-not-valid-tip, .rtl .response-wrap  {font-family:'Droid Arabic Kufi', sans-serif;}
-.rtl p {font-family:"JF Flat Regular", Arial;line-height:1.8em}
-
-/* GENERAL
----------------------*/
-.rtl .col12, .rtl .col11, .rtl .col10, .rtl .col9, .rtl .col8, .rtl .col7, .rtl .col6, .rtl .col5, .rtl .col4, .rtl .col3, .rtl .col2,.rtl .col1 {float:right}
-.rtl .x11 {margin-right:1045px;margin-left:0}
-.rtl .x10 {margin-right:950px}
-.rtl .x9 {margin-right:855px}
-.rtl .x8 {margin-right:760px}
-.rtl .x7 {margin-right:665px}
-.rtl .x6 {margin-right:570px}
-.rtl .x5 {margin-right:455px}
-.rtl .x4 {margin-right:380px}
-.rtl .x3 {margin-right:285px}
-.rtl .x2 {margin-right:190px}
-.rtl .x1 {margin-right:95px}
-.rtl .x1,.rtl .x2,.rtl .x3,.rtl .x4,.rtl .x5,.rtl .x6,.rtl .x7,.rtl .x8,.rtl .x9,.rtl .x10,.rtl .x11 {margin-left:0}
+.rtl [class^="col"], .rtl [class^="col-fifth"], .rtl [class^="col-third"] {float:right}
+.rtl .x1 {margin-right:16%;margin-left:0}
+.rtl .x2 {margin-right:36%;margin-left:0}
+.rtl .x3 {margin-right:56%;margin-left:0}
+.rtl .x4 {margin-right:76%;margin-left:0}
 /* HEADER
 ---------------------*/
-/*.rtl header ul {margin:0 15px 0 0;}*/
-.rtl .show-menu,.rtl .show-lang {float:left;}
-.rtl .menu-wrap {float:left}
-.rtl .menu-wrap li {float:right}
-.rtl .menu-wrap a {padding: 41px 50px}
-.rtl .show-lang p {font:bold 1.4em/1 'Oswald', Arial}
-/* SIDEBAR
----------------------*/
-.rtl .menu-side a:after, .rtl .read-more a:after {right:0;left:inherit}
+.rtl .logo {float:right}
+.rtl .menu-wrap, .rtl .show-tools {float:left}
+.rtl .menu-wrap a {padding:0 1.4em 0 6em;}
+.rtl .drawer-container form,.rtl .drawer-container .search-tools {float:right}
 /* CONTENT
 ---------------------*/
-.rtl .filter li {float:right}
-.rtl .filter li:before,.rtl .item:before {right:0;left:inherit}
-/* CONTENT - ARTICLE / featured
----------------------*/
-.rtl .featured .title {right:10%;left:inherit}
-.rtl .featured span {line-height:2}
-/* CONTENT - ARTICLE / archive
----------------------*/
-.rtl.archive article {float:right}
-.rtl.archive article.no-thumb .icon {left:-10%;right:inherit}
-/* CONTENT - ARTICLE / single
----------------------*/
-.rtl.single .article-sidebar {float:left;}
-.rtl article .body li {margin:0 1.25em 0.75em 0;padding:0 0.25em 0 0; line-height:1.8}
-.rtl.single .endnotes ol span {margin-left:5px;margin-right:0}
-.rtl.single .endnotes li {margin:0;padding:0}
-.rtl .download p {direction:ltr;text-align:right}
-.rtl.single article.has-thumb .text {float:left}
+.rtl a:after {right:0;left:inherit;}
+.rtl .featured h2 {right:16%;left:inherit}
+.rtl .filter a:before {right:0;left:inherit}
+.rtl .grid article {float:right}
+.rtl .grid .no-thumb .icon {left:-15%;right:inherit;} 
 /* FOOTER
 ---------------------*/
-.rtl footer .logo-text {background-position:0 22px;}
-.rtl footer form input,.rtl footer form textarea {font-family:'Droid Arabic Kufi',sans-serif}
-footer form .action-field {float:left}
-/*.rtl footer p,.rtl footer p a {font-size: 0.75em}*/
+
+.rtl .col-third-one.widget  {text-align:left;padding-right:20%;padding-left:35px}
+.rtl .logo-text {background-position:0 22px;}
+.rtl .form-field.action-field {float:left}
+.rtl .menu-bottom {font-size:0.875em}

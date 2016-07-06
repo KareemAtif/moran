@@ -2,7 +2,7 @@
 /**
 * @package moran
 * @since 1.0
-* @name Content for posts in loop
+* @name Content for posts in Archive page and Search
 **/
 ?>
 <?php if (has_post_thumbnail()): ?>

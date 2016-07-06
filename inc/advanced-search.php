@@ -4,33 +4,24 @@
 * @subpackage WPAS
 * @since 1.0
 **/
-// Get places from posts
-function issue_place() {
-  $args = array(
-    'post_type' => 'document',
-    'posts_per_page' => '-1',
-  );
-  $wp_query = new WP_Query($args);
-  $temp = array();
-  $places = array();
-  unset($places);
-  $counter = 0;
-  while ($wp_query -> have_posts()): $wp_query->the_post();
-    $field_key = '';
-    $post_id = get_the_ID();
-    $field = get_field_object($field_key, $post_id);
-    $places[$counter] = $field['value'];
-    $counter++;
-  endwhile;
-  $result = array_unique($places);
-  sort($result);
-return $result;
+// Get list of CPTs
+function post_types(){
+    $args = array('public' => true, '_builtin' => false);
+    $output = 'objects';
+    $operator = 'and';
+    $exclude = array('wpcf7_contact_form');
+    $post_types = get_post_types($args, $output, $operator);
+    foreach ($post_types as $post_type):
+    if(TRUE === in_array($post_type->name, $exclude))
+    continue;
+    endforeach;
+    $post_type->labels->menu_name;
 }
 // Form
 function advanced_search_form(){
   $args = array();
   $args['wp_query'] = array(
-    'post_type' => 'document',
+    'post_type' => array('policy_analysis','facts_budgets','research','urban_archive'),
     'orderby' => 'title',
     'order' => 'ASC',
   );
@@ -39,13 +30,42 @@ function advanced_search_form(){
   );
   $args['form']['ajax'] = array(
     'enabled' => true,
-    'show_default_results' => true,
+    'show_default_results' => false,
   );
   $args['fields'][] = array(
+    'pre_html' => '<div class="form-field">',
     'type' => 'search',
+    'placeholder' => __('Enter search here...', 'moran'),
+    'post_html' => '</div><div class="form-collect">',
   );
-  $arg['fields'][] = array(
-    'type' => 'meta_key',
+  /*$args['fields'][] = array(
+   'pre_html' => '<div class="form-field action-field">',
+   'type' => 'clear',
+   'value' => __('Reset', 'moran'),
+   'post_html' => '</div>',
+  );*/
+  $args['fields'][] = array(
+    'pre_html' => '<div class="form-field">',
+    'type' => 'taxonomy',
+    'taxonomy' => 'post_tag',
+    'format' => 'checkbox',
+    'post_html' => '</div>',
+  );
+  $args['fields'][] = array(
+    'pre_html' => '<div class="form-field">',
+    'type' => 'post_type',
+    'values' => array('policy_analysis' => __('Policy Analysis', 'moran'),'facts_budgets' => __('Facts & Budgets', 'moran'),'research' => __('Research', 'moran'),'urban_archive' => __('Urban Archive', 'moran'),),
+    'format' => 'checkbox',
+    'post_html' => '</div>',
+  );
+  $args['fields'][] = array( 
+  'pre_html' => '<div class="form-field">',
+  'type' => 'orderby', 
+  'format' => 'select', 
+  'label' => __('Order by', 'moran'), 
+  'values' => array('title' => __('Title', 'moran'), 
+                    'date' => __('Date', 'moran')),
+  'post_html' => '</div></div>',                     
   );
   register_wpas_form('advanced-search', $args);
 }

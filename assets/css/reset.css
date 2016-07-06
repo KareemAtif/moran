@@ -7,10 +7,11 @@ Email: Kareematif@gmail.com | Twitter: @kareematif
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 ----------------------------------------------------
-   BODY
+   GLOBAL
 ---------------------*/
 *, *:before, *:after {box-sizing:border-box}
-html,body{margin:0;padding:0}
+html,body,ul,form *{margin:0;padding:0}
+html {height:100%}
 /* HEADING
 ---------------------*/
 h1 {margin: 0.75em 0}
@@ -23,42 +24,6 @@ h6 {margin: 0.438em 0}
 ---------------------*/
 a {text-decoration: none;}
 img {max-width:100%;height:auto;vertical-align:middle;}
-
-
-
-html, body, ul, ol, form, input{margin:0;padding:0}
-html {height:100%}
-/* PARAGRAPH
----------------------*/
-h1 {margin: 0.75em 0}
-h2 {margin: 0.688em 0}
-h3 {margin: 0.625em 0}
-h4 {margin: 0.563em 0}
-h5 {margin: 0.5em 0}
-h6 {margin: 0.438em 0}
-
-.clearfix:after {content:"";display:table;clear:both}
-input {border:none;outline:none;font-family:inherit}
-img {max-width:100%;height:auto;vertical-align:middle}
-table, td{width:auto}
-table {max-width:100%; border-collapse: collapse;border-spacing:0}
-textarea {font:inherit;background:none;border:none;resize:none;outline:none}
-form input::-moz-placeholder {color:#ddd;}
-form input::-webkit-input-placeholder {color:#ddd;}
-form input:-ms-input-placeholder {color:#ddd;}
-form textarea:-moz-placeholder {color:#ddd;}
-form textarea::-moz-placeholder {color:#ddd;}
-form textarea::-webkit-input-placeholder {color:#ddd;}
-form textarea:-ms-input-placeholder {color:#ddd;}
-
-::selection {color:#fff;background:#09afeb}
-::-moz-selection {color:#fff;background:#09afeb}
-/*
-ol{list-style-type: disc}
-.ui-widget *, input,select,option {outline: none;}
-input,button,textarea, select{background:none;border:none;-moz-appearance:textfield;}
-li {list-style-type: none;}
-input::-webkit-outer-spin-button {-webkit-appearance: none;}
-input::-webkit-inner-spin-button {-webkit-appearance: none;}
-textarea {resize: vertical;}
-*/
+form * {background:none;border:none;outline:none;font:inherit}
+ul {list-style:none}
+li:not(article) {list-style:none}
